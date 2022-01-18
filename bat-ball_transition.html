@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bat-ball</title>
+</head>
+<style>
+    container{
+        margin-top: 70px ;
+        display: flex;
+        width: 60%
+    }
+
+    ball{
+        height: 45px;
+        width: 45px;
+        background-color: brown;
+        border-radius: 100%;
+        position: relative;
+        top: 380px;
+        left: 123px;
+        box-shadow: 5px 9px 20px #7c7a7a;
+    }
+    container:hover bat{
+        transform-origin: right top;
+        transform: rotate(-55deg);
+        transition: transform 0.3s ease-in;
+    }
+    container:hover ball{
+        transform: translate(900px, -100px)  ;
+        transition: transform 0.3s ease-in 0.33s;
+    }
+    hr{
+        margin-top: 8%;
+        width: 90%;
+        height: 16px;
+        background-color: rgb(36, 104, 36);
+    }
+</style>
+<body>
+    <container>
+        <bat>
+            <img src="images/cricket_bat.png" alt="" srcset="">
+        </bat>
+        <ball>
+
+        </ball>
+    </container>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Animation</title>
+</head>
+<style>
+    img {
+        width: 300px;
+        margin: 150px 500px;
+        padding: 50px 50px;
+        border-radius: 30%;
+        background-color: rgb(218, 228, 236);
+        border: 3px dashed rgb(54, 54, 117);
+
+    }
+
+    @keyframes rotation {
+        10% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(220deg) scale(1.2);
+            background-color: white;
+            border: 0px;
+
+        }
+
+        100% {
+            transform: rotate(360deg);
+            background-color: white;
+            border: 0px;
+        }
+    }
+
+    img:hover {
+        animation: rotation 4s ease-in-out 0.2s 2 alternate;
+    }
+</style>
+
+<body>
+    <img src="images/camera.png" alt="" srcset="">
+</body>
+
+</html>
